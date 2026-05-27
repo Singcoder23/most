@@ -89,7 +89,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'Mattermost',
+                    siteName: 'Most',
                 },
             });
 
@@ -117,7 +117,7 @@ describe('Actions.Admin', () => {
             get('/config').
             reply(200, {
                 TeamSettings: {
-                    SiteName: 'Mattermost',
+                    siteName: 'Most',
                     TeammateNameDisplay: 'username',
                 },
             });

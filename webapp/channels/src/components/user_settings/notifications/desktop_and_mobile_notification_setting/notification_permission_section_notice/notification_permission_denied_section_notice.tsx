@@ -15,7 +15,7 @@ export default function NotificationPermissionDeniedSectionNotice() {
 
     return (
         <div className='extraContentBeforeSettingList'>
-            <SectionNotice
+            {/* <SectionNotice
                 type='danger'
                 title={intl.formatMessage({
                     id: 'user.settings.notifications.desktopAndMobile.notificationSection.permissionDenied.title',
@@ -32,7 +32,7 @@ export default function NotificationPermissionDeniedSectionNotice() {
                     }),
                     onClick: handleClick,
                 }}
-            />
+            /> */}
         </div>
     );
 }

@@ -24,7 +24,7 @@ export default function LoggedInRoute(props: Props) {
             {...rest}
             render={(routeProps) => (
                 <LoggedIn {...routeProps}>
-                    <OnBoardingTaskList/>
+                    {/* <OnBoardingTaskList/> */}
                     <CloudPreviewModalController/>
                     <Component {...(routeProps)}/>
                 </LoggedIn>

@@ -290,16 +290,7 @@ export default function ChannelMembersRHS({
                         variant='app'
                         message={formatMessage({
                             id: 'channel_members_rhs.default_channel_moderation_restrictions',
-                            defaultMessage: 'In this channel, you can only remove guests. Only <link>channel admins</link> can manage other members.',
-                        }, {
-                            link: (msg: React.ReactNode) => (
-                                <ExternalLink
-                                    href='https://docs.mattermost.com/welcome/about-user-roles.html#channel-admin'
-                                    location='channel_members_rhs'
-                                >
-                                    {msg}
-                                </ExternalLink>
-                            ),
+                            defaultMessage: 'In this channel, you can only remove guests. Only channel admins can manage other members.',
                         })}
                     />
                 </div>

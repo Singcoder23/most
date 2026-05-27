@@ -73,14 +73,14 @@ const useGetTaskDetails = () => {
             }),
         },
 
-        [OnboardingTasksName.DOWNLOAD_APP]: {
-            id: 'task_download_mm_apps',
-            svg: Phone,
-            message: formatMessage({
-                id: 'onboardingTask.checklist.task_download_mm_apps',
-                defaultMessage: 'Download the Desktop and Mobile Apps.',
-            }),
-        },
+        // [OnboardingTasksName.DOWNLOAD_APP]: {
+        //     id: 'task_download_mm_apps',
+        //     svg: Phone,
+        //     message: formatMessage({
+        //         id: 'onboardingTask.checklist.task_download_mm_apps',
+        //         defaultMessage: 'Download the Desktop and Mobile Apps.',
+        //     }),
+        // },
 
         [OnboardingTasksName.VISIT_SYSTEM_CONSOLE]: {
             id: 'task_visit_system_console',
@@ -255,18 +255,18 @@ export const useHandleOnBoardingTaskTrigger = () => {
             handleSaveData(taskName, TaskNameMapToSteps[taskName].FINISHED);
             break;
         }
-        case OnboardingTasksName.DOWNLOAD_APP: {
-            handleSaveData(taskName, TaskNameMapToSteps[taskName].FINISHED);
-            const preferences = [{
-                user_id: currentUserId,
-                category: OnboardingTaskCategory,
-                name: OnboardingTaskList.ONBOARDING_TASK_LIST_OPEN,
-                value: 'true',
-            }];
-            dispatch(savePreferences(currentUserId, preferences));
-            window.open('https://mattermost.com/download#desktop', '_blank', 'noopener,noreferrer');
-            break;
-        }
+        // case OnboardingTasksName.DOWNLOAD_APP: {
+        //     handleSaveData(taskName, TaskNameMapToSteps[taskName].FINISHED);
+        //     const preferences = [{
+        //         user_id: currentUserId,
+        //         category: OnboardingTaskCategory,
+        //         name: OnboardingTaskList.ONBOARDING_TASK_LIST_OPEN,
+        //         value: 'true',
+        //     }];
+        //     dispatch(savePreferences(currentUserId, preferences));
+        //     window.open('https://mattermost.com/download#desktop', '_blank', 'noopener,noreferrer');
+        //     break;
+        // }
         case OnboardingTasksName.START_TRIAL: {
             dispatch(openModal({
                 modalId: ModalIdentifiers.LEARN_MORE_TRIAL_MODAL,

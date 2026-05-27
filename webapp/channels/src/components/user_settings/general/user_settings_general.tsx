@@ -487,11 +487,12 @@ export class UserSettingsGeneralTab extends PureComponent<Props, State> {
     };
 
     updateFirstName = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({firstName: e.target.value});
+        const value = e.target.value.replace(/[0-9]/g, '');
+        this.setState({firstName: value});
     };
-
     updateLastName = (e: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({lastName: e.target.value});
+        const value = e.target.value.replace(/[0-9]/g, '');
+        this.setState({lastName: value});
     };
 
     updateNickname = (e: React.ChangeEvent<HTMLInputElement>) => {

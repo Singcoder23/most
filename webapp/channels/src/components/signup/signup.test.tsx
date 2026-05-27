@@ -149,7 +149,7 @@ describe('components/signup/Signup', () => {
             EnableCustomBrand: 'false',
             CustomBrandText: '',
             CustomDescriptionText: '',
-            SiteName: 'Mattermost',
+            siteName: 'Most',
             ExperimentalPrimaryTeam: '',
         };
     });

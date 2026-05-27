@@ -8,7 +8,7 @@ type Props = {
     customDescriptionText?: string;
     siteName: string | undefined;
 };
-const SiteNameAndDescription = ({customDescriptionText, siteName = 'Mattermost'}: Props) => {
+const SiteNameAndDescription = ({customDescriptionText, siteName = 'Most'}: Props) => {
     const description = customDescriptionText || (
         <FormattedMessage
             id='web.root.signup_info'
@@ -18,7 +18,7 @@ const SiteNameAndDescription = ({customDescriptionText, siteName = 'Mattermost'}
 
     return (
         <>
-            <h1 id='site_name'>{siteName}</h1>
+            <h1 id='site_name'>Most</h1>
             <h3
                 id='site_description'
                 className='color--light'

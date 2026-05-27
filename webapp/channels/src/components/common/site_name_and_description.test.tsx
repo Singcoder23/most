@@ -10,7 +10,7 @@ import {renderWithContext, screen} from 'tests/react_testing_utils';
 describe('/components/common/SiteNameAndDescription', () => {
     const baseProps = {
         customDescriptionText: '',
-        siteName: 'Mattermost',
+        siteName: 'Most',
     };
 
     test('should match snapshot, default', () => {

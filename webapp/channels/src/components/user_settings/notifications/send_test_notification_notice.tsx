@@ -120,7 +120,7 @@ const SendTestNotificationNotice = ({
         <>
             <div className='divider-light'/>
             <div style={sectionNoticeContainerStyle}>
-                <SectionNotice
+                {/* <SectionNotice
                     text={intl.formatMessage({
                         id: 'user_settings.notifications.test_notification.body',
                         defaultMessage: 'Not receiving notifications? Start by sending a test notification to all your devices to check if they’re working as expected. If issues persist, explore ways to solve them with troubleshooting steps.',
@@ -129,7 +129,7 @@ const SendTestNotificationNotice = ({
                     primaryButton={primaryButton}
                     tertiaryButton={secondaryButton}
                     type='hint'
-                />
+                /> */}
             </div>
         </>
     );

@@ -22,11 +22,11 @@ const Footer = () => {
 
     return (
         <div className='hfroute-footer'>
-            <span
+            {/* <span
                 key='footer-copyright'
                 className='footer-copyright'
             >
-                {`© ${new Date().getFullYear()} Mattermost Inc.`}
+                {`© ${new Date().getFullYear()} Most Inc.`}
             </span>
             {AboutLink && (
                 <ExternalLink
@@ -67,7 +67,7 @@ const Footer = () => {
                 >
                     {formatMessage({id: 'web.footer.help', defaultMessage: 'Help'})}
                 </ExternalLink>
-            )}
+            )} */}
         </div>
     );
 };

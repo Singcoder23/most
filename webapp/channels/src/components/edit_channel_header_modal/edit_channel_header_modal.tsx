@@ -256,7 +256,7 @@ export class EditChannelHeaderModal extends React.PureComponent<Props, State> {
                             />
                         </div>
                         <div className='post-create-footer'>
-                            <TextboxLinks
+                            {/* <TextboxLinks
                                 showPreview={this.props.shouldShowPreview}
                                 updatePreview={this.setShowPreview}
                                 hasText={this.state.header ? this.state.header.length > 0 : false}
@@ -267,7 +267,7 @@ export class EditChannelHeaderModal extends React.PureComponent<Props, State> {
                                         defaultMessage='Edit'
                                     />
                                 }
-                            />
+                            /> */}
                         </div>
                         {this.renderError()}
                     </div>

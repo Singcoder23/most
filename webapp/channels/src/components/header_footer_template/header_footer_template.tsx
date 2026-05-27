@@ -101,7 +101,7 @@ const HeaderFooterNotLoggedIn = (props: Props) => {
             <div className='row content'>
                 {props.children}
             </div>
-            <div className='row footer'>
+            {/* <div className='row footer'>
                 <div
                     id='footer_section'
                     className='footer-pane col-xs-12'
@@ -126,7 +126,7 @@ const HeaderFooterNotLoggedIn = (props: Props) => {
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -241,7 +241,7 @@ export class ManageLanguage extends React.PureComponent<Props, State> {
                     />
                     {serverError}
                 </div>
-                <div>
+                {/* <div>
                     <br/>
                     <FormattedMessage
                         id='user.settings.languages.promote1'
@@ -262,7 +262,7 @@ export class ManageLanguage extends React.PureComponent<Props, State> {
                             ),
                         }}
                     />
-                </div>
+                </div> */}
             </div>
         );
 

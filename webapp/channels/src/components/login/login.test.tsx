@@ -61,7 +61,7 @@ describe('components/login/Login', () => {
                     EnableCustomBrand: 'false',
                     CustomBrandText: '',
                     CustomDescriptionText: '',
-                    SiteName: 'Mattermost',
+                    siteName: 'Most',
                     ExperimentalPrimaryTeam: '',
                     PasswordEnableForgotLink: 'true',
                 },

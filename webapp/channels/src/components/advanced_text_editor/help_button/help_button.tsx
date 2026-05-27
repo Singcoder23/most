@@ -21,7 +21,7 @@ const HelpButton = (): JSX.Element => {
 
     return (
         <div className='HelpButton'>
-            <button
+            {/* <button
                 type='button'
                 className='HelpButton__link'
                 onClick={handleClick}
@@ -31,7 +31,7 @@ const HelpButton = (): JSX.Element => {
                     id='advanced_text_editor.help_link'
                     defaultMessage='Help'
                 />
-            </button>
+            </button> */}
         </div>
     );
 };

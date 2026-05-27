@@ -337,7 +337,7 @@ function DesktopAndMobileNotificationSettings({
                         id='user.settings.notifications.desktopAndMobile.title'
                         defaultMessage='Desktop and mobile notifications'
                     />
-                    <NotificationPermissionTitleTag/>
+                    {/* <NotificationPermissionTitleTag/> */}
                 </>
             }
             describe={getCollapsedText(desktopActivity, pushActivity)}

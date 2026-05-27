@@ -223,21 +223,21 @@ export default class ThemeSetting extends React.PureComponent<Props, State> {
 
                 inputs.push(premade, custom);
 
-                inputs.push(
-                    <div key='otherThemes'>
-                        <br/>
-                        <ExternalLink
-                            id='otherThemes'
-                            href='http://docs.mattermost.com/help/settings/theme-colors.html#custom-theme-examples'
-                            location='user_settings_theme'
-                        >
-                            <FormattedMessage
-                                id='user.settings.display.theme.otherThemes'
-                                defaultMessage='See other themes'
-                            />
-                        </ExternalLink>
-                    </div>,
-                );
+                // inputs.push(
+                //     <div key='otherThemes'>
+                //         <br/>
+                //         <ExternalLink
+                //             id='otherThemes'
+                //             href='http://docs.mattermost.com/help/settings/theme-colors.html#custom-theme-examples'
+                //             location='user_settings_theme'
+                //         >
+                //             <FormattedMessage
+                //                 id='user.settings.display.theme.otherThemes'
+                //                 defaultMessage='See other themes'
+                //             />
+                //         </ExternalLink>
+                //     </div>,
+                // );
             } else {
                 inputs.push(premade);
             }

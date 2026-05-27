@@ -1059,8 +1059,8 @@ export class SecurityTab extends React.PureComponent<Props, State> {
                         areAllSectionsInactive={this.props.activeSection === ''}
                         updateSection={this.handleUpdateSection}
                     />
-                    <div className='divider-light'/>
-                    {oauthSection}
+                    {/* <div className='divider-light'/>
+                    {oauthSection} */}
                     <div className='divider-light'/>
                     {tokensSection}
                     <div className='divider-light'/>

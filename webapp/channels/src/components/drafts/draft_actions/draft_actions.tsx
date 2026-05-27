@@ -108,7 +108,7 @@ function DraftActions({
                 />
             )}
 
-            {
+            {/* {
                 canSend &&
                 <Action
                     icon='icon-clock-send-outline'
@@ -117,7 +117,7 @@ function DraftActions({
                     tooltipText={scheduledDraft}
                     onClick={handleScheduleDraft}
                 />
-            }
+            } */}
 
             {canSend && (
                 <Action

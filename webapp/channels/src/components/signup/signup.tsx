@@ -143,7 +143,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
 
     const enableExternalSignup = enableSignUpWithGitLab || enableSignUpWithOffice365 || enableSignUpWithGoogle || enableSignUpWithOpenId || enableLDAP || enableSAML;
     const hasError = Boolean(emailError || nameError || passwordError || serverError || alertBanner);
-    const canSubmit = Boolean(email && name && password && acceptedTerms) && !hasError && !loading;
+    const canSubmit = Boolean(email && name && password) && !hasError && !loading;
     const passwordConfig = useSelector(getPasswordConfig);
     const {error: passwordInfo} = isValidPassword('', passwordConfig, intl);
 
@@ -750,7 +750,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                                         info={passwordInfo as string}
                                         error={passwordError}
                                     />
-                                    <CheckInput
+                                    {/* <CheckInput
                                         id='signup-body-card-form-check-terms-and-privacy'
                                         ariaLabel={formatMessage({id: 'signup.terms_and_privacy.checkmark.box', defaultMessage: 'Terms and privacy policy checkbox'})}
                                         name='terms'
@@ -778,7 +778,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
                                                 },
                                             )}
                                         checked={acceptedTerms}
-                                    />
+                                    /> */}
                                     <SaveButton
                                         extraClasses='signup-body-card-form-button-submit large'
                                         saving={isWaiting}

@@ -217,7 +217,7 @@ const defaultServerConfig: AdminConfig = {
         DeleteAccountLink: '',
     },
     TeamSettings: {
-        SiteName: 'Mattermost',
+        SiteName: 'Most',
         MaxUsersPerTeam: 50,
         EnableJoinLeaveMessageByDefault: true,
         EnableUserCreation: true,

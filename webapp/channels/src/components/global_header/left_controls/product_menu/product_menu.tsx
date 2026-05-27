@@ -122,7 +122,7 @@ const ProductMenu = (): JSX.Element => {
                 open={switcherOpen}
             >
                 <ProductMenuContainer onClick={handleClick}>
-                    <ProductMenuButton
+                    {/* <ProductMenuButton
                         aria-expanded={switcherOpen}
                         aria-label={formatMessage({id: 'global_header.productSwitchMenu', defaultMessage: 'Product switch menu'})}
                         aria-controls='product-switcher-menu'
@@ -140,7 +140,7 @@ const ProductMenu = (): JSX.Element => {
                         ) : (
                             <ProductBranding/>
                         )}
-                    </ProductMenuButton>
+                    </ProductMenuButton> */}
                 </ProductMenuContainer>
                 <Menu
                     listId={'product-switcher-menu-dropdown'}

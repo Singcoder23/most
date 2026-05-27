@@ -292,7 +292,7 @@ export default class SelectTeam extends React.PureComponent<Props, State> {
                                 defaultMessage='Teams you can join: '
                             />
                         </h4>
-                        <ExternalLink
+                        {/* <ExternalLink
                             location='learn_about_teams'
                             href={MATTERMOST_ACADEMY_TEAM_TRAINING_LINK}
                             className='LearnAboutTeamsLink'
@@ -305,7 +305,7 @@ export default class SelectTeam extends React.PureComponent<Props, State> {
                                 id='learn_about_teams'
                                 defaultMessage='Learn about teams'
                             />
-                        </ExternalLink>
+                        </ExternalLink> */}
                     </div>
                     <InfiniteScroll
                         callBack={this.fetchMoreTeams}
