@@ -107,13 +107,13 @@ export class MobileSidebarRightItems extends React.PureComponent<Props> {
                     </SystemPermissionGate>
                 </Menu.Group>
                 <Menu.Group>
-                    <SystemPermissionGate
+                    {/* <SystemPermissionGate
                         permissions={[Permissions.SYSCONSOLE_WRITE_ABOUT_EDITION_AND_LICENSE]}
                     >
                         <Menu.StartTrial
                             id='startTrial'
                         />
-                    </SystemPermissionGate>
+                    </SystemPermissionGate> */}
                 </Menu.Group>
                 <Menu.Group>
                     <UserAccountOnlineMenuItem
@@ -380,7 +380,7 @@ export class MobileSidebarRightItems extends React.PureComponent<Props> {
                 <Menu.Group>
                     {pluginItems}
                 </Menu.Group>
-                <Menu.Group>
+                {/* <Menu.Group>
                     <Menu.ItemExternalLink
                         id='helpLink'
                         show={Boolean(this.props.helpLink)}
@@ -429,7 +429,7 @@ export class MobileSidebarRightItems extends React.PureComponent<Props> {
                             />
                         }
                     />
-                </Menu.Group>
+                </Menu.Group> */}
                 <Menu.Group>
                     <Menu.ItemAction
                         id='logout'

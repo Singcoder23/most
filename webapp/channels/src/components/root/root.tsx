@@ -119,63 +119,64 @@ export default class Root extends React.PureComponent<Props, State> {
 
     private showLandingPageIfNecessary = () => {
         // Only show Landing Page if enabled
-        if (!this.props.enableDesktopLandingPage) {
-            return;
-        }
+        return;
+        // if (!this.props.enableDesktopLandingPage) {
+        //     return;
+        // }
 
-        // We have nothing to redirect to if we're already on Desktop App
-        // Chromebook has no Desktop App to switch to
-        if (isDesktopApp() || isChromebook()) {
-            return;
-        }
+        // // We have nothing to redirect to if we're already on Desktop App
+        // // Chromebook has no Desktop App to switch to
+        // if (isDesktopApp() || isChromebook()) {
+        //     return;
+        // }
 
-        // Nothing to link to if we've removed the Android App download link
-        if (isAndroid() && !this.props.androidDownloadLink) {
-            return;
-        }
+        // // Nothing to link to if we've removed the Android App download link
+        // if (isAndroid() && !this.props.androidDownloadLink) {
+        //     return;
+        // }
 
-        // Nothing to link to if we've removed the iOS App download link
-        if (isIos() && !this.props.iosDownloadLink) {
-            return;
-        }
+        // // Nothing to link to if we've removed the iOS App download link
+        // if (isIos() && !this.props.iosDownloadLink) {
+        //     return;
+        // }
 
-        // Nothing to link to if we've removed the Desktop App download link
-        if (!this.props.appDownloadLink) {
-            return;
-        }
+        // // Nothing to link to if we've removed the Desktop App download link
+        // if (!this.props.appDownloadLink) {
+        //     return;
+        // }
 
-        // Only show the landing page once
-        if (BrowserStore.hasSeenLandingPage()) {
-            return;
-        }
+        // // Only show the landing page once
+        // if (BrowserStore.hasSeenLandingPage()) {
+        //     return;
+        // }
 
-        // We don't want to show when resetting the password
-        if (this.props.location.pathname === '/reset_password_complete') {
-            return;
-        }
+        // // We don't want to show when resetting the password
+        // if (this.props.location.pathname === '/reset_password_complete') {
+        //     return;
+        // }
 
-        // We don't want to show when we're doing Desktop App external login
-        if (this.props.location.pathname === '/login/desktop') {
-            return;
-        }
+        // // We don't want to show when we're doing Desktop App external login
+        // if (this.props.location.pathname === '/login/desktop') {
+        //     return;
+        // }
 
-        // Stop this infinitely redirecting
-        if (this.props.location.pathname.includes('/landing')) {
-            return;
-        }
+        // // Stop this infinitely redirecting
+        // if (this.props.location.pathname.includes('/landing')) {
+        //     return;
+        // }
 
-        // Disabled to avoid breaking the CWS flow
-        if (this.props.isCloud) {
-            return;
-        }
+        // // Disabled to avoid breaking the CWS flow
+        // if (this.props.isCloud) {
+        //     return;
+        // }
 
-        // Disable for Rainforest tests
-        if (window.location.hostname?.endsWith('.test.mattermost.com')) {
-            return;
-        }
+        // // Disable for Rainforest tests
+        // if (window.location.hostname?.endsWith('.test.mattermost.com')) {
+        //     return;
+        // }
 
-        this.props.history.push('/landing#' + this.props.location.pathname + this.props.location.search);
-        BrowserStore.setLandingPageSeen(true);
+        // this.props.history.push('/landing#' + this.props.location.pathname + this.props.location.search);
+        // BrowserStore.setLandingPageSeen(true);
     };
 
     componentDidUpdate(prevProps: Props, prevState: State) {
