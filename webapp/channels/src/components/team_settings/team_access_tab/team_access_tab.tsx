@@ -94,7 +94,7 @@ const AccessTab = ({showTabSwitchError, areThereUnsavedChanges, setShowTabSwitch
             aria-labelledby='accessButton'
             role='tabpanel'
         >
-            {!team.group_constrained && (
+            {/* {!team.group_constrained && (
                 <AllowedDomainsSelect
                     allowedDomains={allowedDomains}
                     setAllowedDomains={setAllowedDomains}
@@ -102,7 +102,7 @@ const AccessTab = ({showTabSwitchError, areThereUnsavedChanges, setShowTabSwitch
                     setSaveChangesPanelState={setSaveChangesPanelState}
                 />
             )}
-            <div className='divider-light'/>
+            <div className='divider-light'/> */}
             <OpenInvite
                 isGroupConstrained={team.group_constrained}
                 allowOpenInvite={allowOpenInvite}
