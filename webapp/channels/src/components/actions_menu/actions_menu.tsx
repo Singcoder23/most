@@ -322,66 +322,66 @@ export class ActionMenuClass extends React.PureComponent<Props, State> {
             return null;
         }
 
-        const buttonId = `${this.props.location}_actions_button_${this.props.post.id}`;
-        const popupId = `${this.props.location}_actions_dropdown_${this.props.post.id}`;
+        // const buttonId = `${this.props.location}_actions_button_${this.props.post.id}`;
+        // const popupId = `${this.props.location}_actions_dropdown_${this.props.post.id}`;
 
-        if (hasPluginMenuItems) {
-            const pluggable = (
-                <Pluggable
-                    postId={this.props.post.id}
-                    pluggableName={PLUGGABLE_COMPONENT}
-                    key={this.props.post.id + 'pluggable'}
-                />
-            );
+        // if (hasPluginMenuItems) {
+        //     const pluggable = (
+        //         <Pluggable
+        //             postId={this.props.post.id}
+        //             pluggableName={PLUGGABLE_COMPONENT}
+        //             key={this.props.post.id + 'pluggable'}
+        //         />
+        //     );
 
-            const menuItems = [
-                pluginItems,
-                appBindings,
-                pluggable,
-                marketPlace,
-            ];
+        //     const menuItems = [
+        //         pluginItems,
+        //         appBindings,
+        //         pluggable,
+        //         marketPlace,
+        //     ];
 
-            return (
-                <MenuWrapper
-                    open={this.props.isMenuOpen}
-                    onToggle={this.handleDropdownOpened}
-                >
-                    <ActionsMenuButton
-                        ref={this.buttonRef}
-                        buttonId={buttonId}
-                        popupId={popupId}
-                        isMenuOpen={this.props.isMenuOpen}
-                    />
-                    <Menu
-                        listId={popupId}
-                        openLeft={true}
-                        openUp={this.state.openUp}
-                        ariaLabel={formatMessage({id: 'post_info.menuAriaLabel', defaultMessage: 'Post extra options'})}
-                    >
-                        {menuItems}
-                    </Menu>
-                </MenuWrapper>
-            );
-        } else if (this.props.isSysAdmin) {
-            return (
-                <>
+        //     return (
+        //         <MenuWrapper
+        //             open={this.props.isMenuOpen}
+        //             onToggle={this.handleDropdownOpened}
+        //         >
+        //             <ActionsMenuButton
+        //                 ref={this.buttonRef}
+        //                 buttonId={buttonId}
+        //                 popupId={popupId}
+        //                 isMenuOpen={this.props.isMenuOpen}
+        //             />
+        //             <Menu
+        //                 listId={popupId}
+        //                 openLeft={true}
+        //                 openUp={this.state.openUp}
+        //                 ariaLabel={formatMessage({id: 'post_info.menuAriaLabel', defaultMessage: 'Post extra options'})}
+        //             >
+        //                 {menuItems}
+        //             </Menu>
+        //         </MenuWrapper>
+        //     );
+        // } else if (this.props.isSysAdmin) {
+        //     return (
+        //         <>
 
-                    <ActionsMenuButton
-                        ref={this.buttonRef}
-                        buttonId={buttonId}
-                        onClick={this.openDropdown}
-                        popupId={popupId}
-                        isMenuOpen={this.props.isMenuOpen}
-                    />
-                    <ActionsMenuEmptyPopover
-                        anchorElement={this.buttonElement}
-                        onOpenMarketplace={this.handleOpenMarketplace}
-                        onToggle={this.props.handleDropdownOpened}
-                        isOpen={this.props.isMenuOpen}
-                    />
-                </>
-            );
-        }
+        //             <ActionsMenuButton
+        //                 ref={this.buttonRef}
+        //                 buttonId={buttonId}
+        //                 onClick={this.openDropdown}
+        //                 popupId={popupId}
+        //                 isMenuOpen={this.props.isMenuOpen}
+        //             />
+        //             <ActionsMenuEmptyPopover
+        //                 anchorElement={this.buttonElement}
+        //                 onOpenMarketplace={this.handleOpenMarketplace}
+        //                 onToggle={this.props.handleDropdownOpened}
+        //                 isOpen={this.props.isMenuOpen}
+        //             />
+        //         </>
+        //     );
+        // }
 
         return null;
     }

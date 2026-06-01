@@ -101,14 +101,14 @@ export const EMOJI_CATEGORIES: Categories = {
         }),
         iconClassName: 'icon-flag-outline',
     },
-    custom: {
-        name: 'custom',
-        label: defineMessage({
-            id: 'emoji_picker.custom',
-            defaultMessage: 'Custom',
-        }),
-        iconClassName: 'icon-emoticon-custom-outline',
-    },
+    // custom: {
+    //     name: 'custom',
+    //     label: defineMessage({
+    //         id: 'emoji_picker.custom',
+    //         defaultMessage: 'Custom',
+    //     }),
+    //     iconClassName: 'icon-emoticon-custom-outline',
+    // },
 } as const;
 
 const {recent, searchResults, ...standardCategories} = EMOJI_CATEGORIES;
