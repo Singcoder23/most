@@ -102,7 +102,7 @@ const AccessTab = ({showTabSwitchError, areThereUnsavedChanges, setShowTabSwitch
                     setSaveChangesPanelState={setSaveChangesPanelState}
                 />
             )}
-            <div className='divider-light'/> */}
+            <div className='divider-light'/>  */}
             <OpenInvite
                 isGroupConstrained={team.group_constrained}
                 allowOpenInvite={allowOpenInvite}
